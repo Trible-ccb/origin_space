@@ -1,0 +1,24 @@
+[Ver]
+25
+[WksPlotMenuMRUList]
+
+Version = 1
+1 = 33250|Line + Symbol
+2 = 33249|Line
+3 = 33333|Spline
+4 = 33248|Scatter
+5 = 35573|3D Waterfall
+6 = 33320|3 Point Segment
+7 = 33319|2 Point Segment
+8 = 35569|3D Trajectory
+9 = 33291|Fill Area
+10 = 35568|3D Scatter
+[Menu_wksStatistics]
+
+1 = ROCCurve|0||ROC Curve:Perform a ROC analysis|14||1|1
+[Menu_granalys]
+
+1 = FitLinear|0||Fit Linear:linear regression on XY data|14||1|1
+[Menu_matMatrix]
+1 = mdim|0||Set Dimensions:Set the dimensions and values of XY coordinates for the active matrix|0||0|0
+2 = m2w|0||Convert to &Worksheet:Convert the Matrix data into a Worksheet|14||0|1

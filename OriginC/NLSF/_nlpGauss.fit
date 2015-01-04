@@ -1,0 +1,44 @@
+#include <origin.h>
+
+// Add your special include files here.
+// For example, if you want to use functions from the NAG library, 
+// add the header file for the NAG functions here.
+
+// Add code here for other Origin C functions that you want to define in this file,
+// and access in your parameter initialization.
+
+// You can access C functions defined in other files, if those files are loaded and compiled 
+// in your workspace, and the functions have been prototyped in a header file that you have 
+// included above. 
+	
+// You can access NLSF object methods and properties directly in your function code.
+// You should follow C-language syntax in defining your function. 
+// For instance, if your parameter name is P1, you cannot use p1 in your function code. 
+// When using fractions, remember that integer division such as 1/2 is equal to 0, and not 0.5
+// Use 0.5 or 1/2.0 to get the correct value.
+
+// For more information and examples, please refer to the "User-Defined Fitting Function" 
+// section of the Origin Help file.
+
+
+//----------------------------------------------------------
+// 
+void _nlsfParamGauss(
+// Fit Parameter(s):
+double& y0, double& xc, double& w, double& A,
+// Independent Dataset(s):
+vector& x_data,
+// Dependent Dataset(s):
+vector& y_data,
+// Curve(s):
+Curve x_y_curve,
+// Auxilary error code: 
+int& nErr)
+{
+	// Beginning of editable part
+	xc = peak_pos(x_y_curve, &w, &y0, &A);
+	w *= 0.85;
+	
+	
+	// End of editable part
+}
